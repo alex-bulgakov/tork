@@ -4,12 +4,17 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.top-block
+		&__action
+			text-align: left
+		.search
+			margin-bottom: 15px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.top-block
+		background: $main-color
 
 
 /* Small Devices, Tablets */
@@ -35,6 +40,10 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+
+	.search
+		input
+			min-width: 50px !important
 
 
 /* Extra Small Devices, Phones */

@@ -48,6 +48,12 @@ body textarea:required:valid
 	&:active 
 		background-color: $accent-color-2
 
+.clearfix
+	&::after
+		content: ''
+		display: table
+		clear: both
+
 
 //ALWAYS END
 @import "media"
