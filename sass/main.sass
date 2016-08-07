@@ -3,6 +3,7 @@
 
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/font-awesome.scss"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -28,6 +29,25 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+
+.btn
+	position: relative
+	padding: 10px 20px
+	background-color: $accent-color-2
+	border: none
+	border-radius: 2rem
+	color: white
+	&:focus
+		outline: none
+		text-decoration: none
+		color: white
+	&:hover
+		text-decoration: none
+		color: white
+		background-color: lighten($accent-color-2, 10%)
+	&:active 
+		background-color: $accent-color-2
+
 
 //ALWAYS END
 @import "media"

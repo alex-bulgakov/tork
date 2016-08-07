@@ -1,4 +1,8 @@
-$(function() {
+$(document).ready(function() {
+
+	$(".menu-link").bigSlide({
+		side: "right"
+	});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
