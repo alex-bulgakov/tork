@@ -3,10 +3,10 @@
 
 body
 	font-size: 13px
+	font-family: "OpenSansRegular", sans-serif
 	min-width: 320px
 	position: relative
 	line-height: 24px 
-	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
 
 	background-color: $main-color
@@ -33,8 +33,10 @@ body
 		width: 100%
 		height: 100%
 		background: linear-gradient(90deg+40, transparent 30%, $main-color 60%)
+	&__logo
+		float: left
 	&__action
-		text-align: right
+		float: right
 		word-wrap: nowrap
 		.btn, .search
 			display: inline-block
@@ -58,27 +60,23 @@ body
 		color: white
 		font-size: 20px
 		transition-duration: .1s
+		text-decoration: none
 		&:focus
 			text-decoration: none
 		&:hover
 			transform: scale(1.5)
 			text-decoration: none
-	.panel
-		ul
-			list-style: none
-			margin: 0
-			padding: 0
-		li
-			text-align: left
-			background-color: $accent-color
-		a
-			display: block
-			padding: 10px
-			border-bottom: 1px solid lighten($accent-color, 10%)
-			color: white
-			background-color: $accent-color
-			&:hover
-				text-decoration: none
-				background-color: lighten($accent-color, 5%) 
-			&:focus
-				text-decoration: none
+.mmenu
+	background-color: darken($accent-color, 15%)!important
+	ul
+		background-color: $accent-color	
+	li
+		border-bottom-color: lighten($accent-color, 10%) !important
+	a
+		color: white !important
+		text-transform: uppercase
+		&:hover
+			background-color: lighten($accent-color, 15%)
+	.mm-next, .mm-prev
+		&::after, &::before
+			border-color: white !important

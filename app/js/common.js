@@ -1,10 +1,15 @@
 $(document).ready(function() {
 
-	$(".menu-link").bigSlide({
-		side: "right"
+	$("#my-menu").mmenu({
+		"offCanvas" : {
+			"position" : "right"
+		},
 	});
 
-	//SVG Fallback
+	var api = $("#my-menu").data("mmenu");
+	api.closeAllPanels();
+
+		//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
 			return $(this).attr("src").replace(".svg", ".png");
