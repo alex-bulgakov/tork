@@ -44,7 +44,7 @@
 	<div class="my-page">
 
 
-		<nav id="my-menu" class="mmenu">
+		<nav id="my-menu" class="mmenu hidden">
 							<ul>
 								<li><a href="#">Menu</a></li>
 								<li><a href="#">Menu</a></li>
@@ -62,133 +62,112 @@
 							</ul>
 						</nav>
 
-		<header>
+		<header class="header">
 			
-			<div class="top-block">
-			
-				<div class="container">
-					<div class="row">
+			<div class="container">
+				<div class="row">
 
-						<div class="col-md-3 ">
-							<div class="top-block__logo">
-								<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-							</div>
-						</div>
-										
-						<div class="col-md-17 ">
-							<div class="top-block__action">
-								<form action="" class="search">
-									<input class="btn" type="text" placeholder="Search website">
-									<i class="fa fa-search"></i>
-								</form>
-										
-								<a href="#" class="btn">Buy $21</a>
-										
-								<a href="#my-menu" class="menu-link">&#9776;</a>
-							</div>
-						</div>
+					<div class="header__logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 					</div>
+									
+					<div class="header__action">
+						<form action="" class="search">
+							<input class="btn" type="text" placeholder="Search website">
+							<i class="fa fa-search"></i>
+						</form>
+								
+						<a href="#" class="btn header__buy">Buy $21</a>
+								
+						<a href="#my-menu" class="menu-link">&#9776;</a>
+					</div>
+					
+					<div class="site-title">
+						<h1>Building bulletproof fucking apps</h1>	
+						<p>Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan</p>
+					</div>
+					
+				</div>
+			</div>
 
-					<div class="row">
-						<div class="col-md-offset-8 col-md-12">
-							<div class="site-title">
-								<h1>Building bulletproof fucking apps</h1>	
-								<p>Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan</p>
-							</div>
-						</div>
+			<div class="slider ">
+				<div class="slider__item ">
+					<div class="slider__text"> <h2>Super Duper & such</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum numquam ab fugit dolore! Facere ea, hic, autem blanditiis odit excepturi.
+						</p>
+						<a href="#" class="btn">See More</a>
+					</div>
+											
+					<div class="slider__img">
+						<img src="img/slider__img.png" alt="slider image" width="670" height=> 
 					</div>
 				</div>
+			</div>
 
-				<div class="slider ">
-					<div class="slider__item ">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8">
-									<div class="slider__text"> <h2>Super Duper & such</h2>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum numquam ab fugit dolore! Facere ea, hic, autem blanditiis odit excepturi.
-										</p>
-										<a href="#" class="btn">See More</a>
-									</div>
-								</div>
-														
-								<div class="col-md-12">
-									<div class="slider__img">
-										<img src="img/slider__img.png" alt="slider image" width="670" height=> 
-									</div> 
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="features">
+				<div class="features__item">
+					<h3>Lorem ipsum dolor.</h3>
+					<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quae laudantium tempora explicabo aspernatur necessitatibus eaque ullam impedit, sit in!</p>
+					<a href="#" class="btn">See More</a>
 				</div>
-
-				<div class="features">
-					<div class="container">
-						<div class="row">
-				
-					 		<div class="col-md-6">
-								<div class="features__item">
-									<h3>Lorem ipsum dolor.</h3>
-									<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quae laudantium tempora explicabo aspernatur necessitatibus eaque ullam impedit, sit in!</p>
-									<a href="#" class="btn">See More</a>
-								</div>
-							</div>
-				
-							<div class="col-md-6">
-								<div class="features__item">
-									<h3>Lorem ipsum dolor.</h3>
-									<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tempora nobis eius placeat, earum dolores distinctio voluptates beatae, quisquam consequuntur.</p>
-									<a href="#" class="btn">See More</a>
-								</div>
-							</div>
-				
-							<div class="col-md-8">
-								<div class="features__item">
-									<h3>Lorem ipsum dolor.</h3>
-									<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum nam optio cupiditate ea nihil, minima a enim molestias! Suscipit.</p>
-									<a href="#" class="btn">See More</a>
-								</div>
-							</div>
-				
-						</div>
-					</div>
+													
+				<div class="features__item">
+					<h3>Lorem ipsum dolor.</h3>
+					<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tempora nobis eius placeat, earum dolores distinctio voluptates beatae, quisquam consequuntur.</p>
+					<a href="#" class="btn">See More</a>
 				</div>
-				</header>
+							
+				<div class="features__item">
+					<h3>Lorem ipsum dolor.</h3>
+					<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum nam optio cupiditate ea nihil, minima a enim molestias! Suscipit.</p>
+					<a href="#" class="btn">See More</a>
+				</div>
+			</div>
+		</header>
 
 
 				<div class="main-content">
 					
-					<div class="main-content__title">
-						<h3>Designed for humans</h3>
-						<p> Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest. 3 wolf moon Thundercats Banksy paleo, yr four loko Shoreditch dreamcatcher.</p>
+				<div class="container">
+					<div class="row">
+							<div class="col-md-20">
+								<div class="main-content__title">
+								<h3>Designed for humans</h3>
+								<p> Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest. 3 wolf moon Thundercats Banksy paleo, yr four loko Shoreditch dreamcatcher.</p>
+														</div>
+							</div>
+						
+						<div class="col-md-16 col-md-offset-2">
+							<div class="main-content__slider">
+								<div class="main-content__slider-controls">
+									<i></i>
+									<i></i>
+									<i></i>
+								</div>
+							
+								<div class="main-content__slider-item">
+									<img src="img/main-content__slider1.jpg" alt="slider">
+									<a href="#" class="main-content__slider-btn">Design win</a>
+								</div>
+								
+								<div class="main-content__slider-item hidden">
+									<img src="img/main-content__slider1.jpg" alt="slider">
+									<a href="#" class="main-content__slider-btn">Design win</a>
+								</div>
+								
+								<div class="main-content__slider-item hidden">
+									<img src="img/main-content__slider1.jpg" alt="slider">
+									<a href="#" class="main-content__slider-btn">Design win</a>
+								</div>
+							
+							</div>
+						</div>
 					</div>
-
-					<div class="main-content__slider">
-						<div class="main-content__slider-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-
-						<div class="main-content__slider-item">
-							<img src="img/main-content__slider1.jpg" alt="slider">
-							<a href="#" class="main-content__slider-btn">Design win</a>
-						</div>
-	
-						<div class="main-content__slider-item hidden">
-							<img src="img/main-content__slider1.jpg" alt="slider">
-							<a href="#" class="main-content__slider-btn">Design win</a>
-						</div>
-	
-						<div class="main-content__slider-item hidden">
-							<img src="img/main-content__slider1.jpg" alt="slider">
-							<a href="#" class="main-content__slider-btn">Design win</a>
-						</div>
-
-					</div>
+				</div>
 
 					<div class="main-content__features">
 
