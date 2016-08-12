@@ -39,3 +39,44 @@ h4
 	font-size: em(20px)
 	line-height: 30px
 
+.header
+	&__top
+		padding-top: 60px
+
+	&__action
+		margin-top: 15px
+		text-align: right
+
+		&>*
+			display: inline-block
+			margin-right: 10px
+
+		.search
+			position: relative
+
+			input
+				background-color: lighten($main-color, 10%)
+				font-family: OpenSansRegular, sans-serif
+
+			.fa
+				position: absolute
+				top: 15px 
+				right: 20px
+				opacity: .3
+
+	&__buy.btn
+		background-color: $accent-color
+		font-family: OpenSansSemibold, sans-serif
+		&:hover
+			background-color: lighten($accent-color, 10%)
+		&:active
+			background-color: $accent-color
+
+	.menu-link
+		color: white
+		font-size: 20px
+		transition-duration: .1s
+		&:hover, &:focus
+			text-decoration: none
+		&:hover
+			transform: scale(1.5)
